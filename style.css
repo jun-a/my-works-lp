@@ -15,7 +15,7 @@ body {
 
 /* Container for animation and blurring */
 #container {
-  transition: filter 2s ease;
+  transition: filter 3s ease; /* Slower blur transition */
   overflow-y: auto;
   height: 100vh;
   backdrop-filter: blur(10px); /* Blur the background image */
@@ -34,7 +34,7 @@ body {
     align-items: center;
     z-index: 9999; /* Ensure it's on top */
     opacity: 1;
-    transition: opacity 2s ease; /* Slower fade out */
+    transition: opacity 3s ease; /* Slower fade out */
 }
 
 body.loaded #animation-overlay {
