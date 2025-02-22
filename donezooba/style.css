@@ -1,0 +1,144 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: url('assets/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden; /* Hide scrollbars during animation */
+}
+
+/* Container for animation and blurring */
+#container {
+  transition: filter 2s ease;
+  overflow-y: auto;
+  height: 100vh;
+  backdrop-filter: blur(10px); /* Blur the background image */
+}
+
+/* Initial animation */
+#animation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's on top */
+    opacity: 1;
+    transition: opacity 2s ease; /* Slower fade out */
+}
+
+body.loaded #animation-overlay {
+    opacity: 0;
+    pointer-events: none; /* Allow interaction with content after animation */
+}
+
+#animation-overlay .animation-content {
+    /* Placeholder animation content, can be customized */
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 50%;
+    animation: scaleUp 3s ease forwards; /* Slower scale up */
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+header {
+    padding: 5px 0;
+    text-align: center;
+    background: white; /* White header */
+    max-height: 10vh; /* Limit header height to 10% of viewport height */
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.logo img {
+    max-height: 7vh; /* Limit logo height to 7% of viewport height */
+    width: auto;
+}
+
+#hero {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#services {
+    padding: 80px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#services h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #2c3e50;
+    width: 100%;
+}
+
+.service {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.service p {
+    color: #333; /* Darker text color */
+}
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
