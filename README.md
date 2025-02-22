@@ -34,8 +34,4 @@ DoneZooBaのシングルページランディングサイトです。sakana.ai�
 
 このプロジェクトはMITライセンスの下でライセンスされています。詳細については、`LICENSE`ファイルを参照してください。
 
-## 連絡先
-
-[あなたの名前] - [あなたのメールアドレス]
-
 プロジェクトリンク: [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY)
