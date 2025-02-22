@@ -21,11 +21,7 @@ DoneZooBaのシングルページランディングサイトです。sakana.ai�
     ```bash
     git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
     ```
-2.  `donezooba`ディレクトリに移動します。
-    ```bash
-    cd donezooba
-    ```
-3.  `index.html`をブラウザで開きます。
+2.  `index.html`をブラウザで開きます。
 
 ## 📝 TODO
 
@@ -33,10 +29,6 @@ DoneZooBaのシングルページランディングサイトです。sakana.ai�
 - [ ] レスポンシブ対応の確認
 - [ ] アクセシビリティ対応
 - [ ] サービスセクションの詳細化
-
-## 🤝 貢献
-
-貢献はいつでも大歓迎です！貢献方法の詳細については、`CONTRIBUTING.md`を参照してください。
 
 ## 📄 ライセンス
 
